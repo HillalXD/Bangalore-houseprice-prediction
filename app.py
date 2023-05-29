@@ -5,6 +5,10 @@ import pickle
 app = Flask(__name__)
 swagger = Swagger(app)
 
+@app.route("/")
+def hello():
+  return "Hello World"
+
 @app.route('/predict', methods=['POST'])
 def predict():
     """Endpoint that returns the predicted price of a house based on its features.
@@ -42,3 +46,5 @@ def predict():
 
 if __name__ == '__main__':
     app.run(debug=True)
+    http_server = WSGIServer(('', 5000), app)
+    http_server.serve_forever()
