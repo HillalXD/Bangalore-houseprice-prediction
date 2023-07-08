@@ -2,6 +2,7 @@
 # Bangalore housprice prediction
 
 This project use to predict houseprice in Bangalore, you can get house predicted price by assign some features on app that linked with prediction model, This project are usefull for someone who want to search house in bangalore with spesific house parameter and price so they can calculate first before buy the house
+
 ## Install
 
 This project requires **Python** and the following Python libraries installed:
@@ -32,12 +33,11 @@ after that open `app.py` to use flask webapp
 python app.py
 ```
 
-
-
 ## Code 
 - Template code is provided in the `Bengaluru.ipynb` notebook file.
 - `bengaluru.csv` in provide data source for training model
 - `app.py` is flask web application to user input features for model predicting and return predicted price as output
+
 ## Dataset features
 
 for doing prediction you need to input this features:
