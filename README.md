@@ -33,6 +33,12 @@ after that open `app.py` to use flask webapp
 python app.py
 ```
 
+then add `/apidocs` on localhost url
+
+```
+http://127.0.0.1:5000/apidocs
+```
+
 ## Code 
 - Template code is provided in the `Bengaluru.ipynb` notebook file.
 - `bengaluru.csv` in provide data source for training model
